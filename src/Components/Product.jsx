@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
+import { Rating } from 'react-simple-star-rating'
 
  
    export default function Product ({cart,setCart,data}) {
     let [toggle,setToggle]=useState(true)
+    const [rating, setRating] = useState(0)
+    const handleRating= (rate)=>{
+        setRating(rating)
+    }
   return <>
   <div className="col mb-5">
                         <div className="card h-100">
@@ -14,8 +19,11 @@ import React, { useState } from 'react'
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">{data.name}</h5>
                                     {/* <!-- Product price--> */}
-                                    {data.price}
+                                    <h6>{data.price}</h6>
+                                    <Rating onClick={handleRating} initialValue={rating} size = {25} />
+                                    
                                 </div>
+                                
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">

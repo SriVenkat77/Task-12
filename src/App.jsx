@@ -29,14 +29,14 @@ const data = [
   },
   {
     
-    name: 'Apple Smartwatch Series 7',
+    name: 'Apple  Series 7',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrMIGP8OqibYxRxNdGVnY01HZSl-dmw8EWg5g2v3Ub-1lKr_8Gzd7lsy9C5R2u1XXqjI&usqp=CAU',
     price: '$299',
     
   },
   {
     
-    name: 'Samsung UHD Smart TV',
+    name: 'Samsung UHD TV',
     image: 'https://img.freepik.com/premium-photo/smart-television-with-white-background-high-quality_889056-9541.jpg?w=740 ',
     price: '$799',
     
